@@ -31,7 +31,6 @@ export const QuoteForm = () => {
 
     const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
         event.preventDefault();
-        console.log('handleSubmit');
 
         const quotation = calculateQuotation();
         setForm(quotation);
@@ -55,7 +54,6 @@ export const QuoteForm = () => {
     };
 
     const handleCalc = () => {
-        console.log('handleCalc');
         const quotation = calculateQuotation();
         setForm(quotation);
     };

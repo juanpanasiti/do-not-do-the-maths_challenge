@@ -47,7 +47,6 @@ const updateQuotationList = (currentList: Quotation[], newQuotation: Quotation):
 export function dollarReducer(state: DollarState, { type, payload }: Action): DollarState {
     switch (type) {
         case 'FILL_DOLLAR_VALUES':
-            console.log(payload);
             return {
                 ...state,
                 values: {
